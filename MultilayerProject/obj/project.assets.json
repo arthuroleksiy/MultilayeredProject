@@ -1,0 +1,357 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SandcastleRefMapper/2.56.2": {
+        "type": "package"
+      },
+      "BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLL.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "SandcastleRefMapper": "2.56.2"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SandcastleRefMapper/2.56.2": {
+      "sha512": "FIRVzr66UWOTkn1+NUPW4L89ODmbewR2MlKCUCfCrWpjtAXv/KRDgLEi2r+E/ocxsl1haKn9UzExo00FXSkEZQ==",
+      "type": "package",
+      "path": "sandcastlerefmapper/2.56.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "sandcastlerefmapper.2.56.2.nupkg.sha512",
+        "sandcastlerefmapper.nuspec",
+        "tools/DotLiquid.dll",
+        "tools/Dotnet.ProjInfo.Helpers.dll",
+        "tools/Dotnet.ProjInfo.dll",
+        "tools/FSharp.Compiler.Service.MSBuild.v12.dll",
+        "tools/FSharp.Compiler.Service.dll",
+        "tools/FSharp.Core.dll",
+        "tools/HtmlAgilityPack.dll",
+        "tools/Jint.dll",
+        "tools/Markdig.dll",
+        "tools/Microsoft.Build.Engine.dll",
+        "tools/Microsoft.Build.Framework.dll",
+        "tools/Microsoft.Build.Locator.dll",
+        "tools/Microsoft.Build.Tasks.v12.0.dll",
+        "tools/Microsoft.Build.Utilities.v12.0.dll",
+        "tools/Microsoft.Build.dll",
+        "tools/Microsoft.CodeAnalysis.CSharp.Features.dll",
+        "tools/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
+        "tools/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/Microsoft.CodeAnalysis.Features.dll",
+        "tools/Microsoft.CodeAnalysis.FlowAnalysis.Utilities.dll",
+        "tools/Microsoft.CodeAnalysis.VisualBasic.Features.dll",
+        "tools/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll",
+        "tools/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "tools/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll",
+        "tools/Microsoft.CodeAnalysis.Workspaces.dll",
+        "tools/Microsoft.CodeAnalysis.dll",
+        "tools/Microsoft.DiaSymReader.dll",
+        "tools/Microsoft.DocAsCode.Build.Common.dll",
+        "tools/Microsoft.DocAsCode.Build.Engine.dll",
+        "tools/Microsoft.DocAsCode.Build.OverwriteDocuments.dll",
+        "tools/Microsoft.DocAsCode.Build.SchemaDriven.dll",
+        "tools/Microsoft.DocAsCode.Common.dll",
+        "tools/Microsoft.DocAsCode.DataContracts.Common.dll",
+        "tools/Microsoft.DocAsCode.DataContracts.ManagedReference.dll",
+        "tools/Microsoft.DocAsCode.Dfm.dll",
+        "tools/Microsoft.DocAsCode.Glob.dll",
+        "tools/Microsoft.DocAsCode.MarkdigEngine.Extensions.dll",
+        "tools/Microsoft.DocAsCode.MarkdigEngine.Validators.dll",
+        "tools/Microsoft.DocAsCode.MarkdigEngine.dll",
+        "tools/Microsoft.DocAsCode.MarkdownLite.dll",
+        "tools/Microsoft.DocAsCode.Metadata.ManagedReference.Common.dll",
+        "tools/Microsoft.DocAsCode.Metadata.ManagedReference.FSharp.dll",
+        "tools/Microsoft.DocAsCode.Metadata.ManagedReference.Roslyn.dll",
+        "tools/Microsoft.DocAsCode.Metadata.ManagedReference.dll",
+        "tools/Microsoft.DocAsCode.Plugins.dll",
+        "tools/Microsoft.DocAsCode.YamlSerialization.dll",
+        "tools/Microsoft.VisualStudio.RemoteControl.dll",
+        "tools/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/Newtonsoft.Json.Schema.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/NuGet.Common.dll",
+        "tools/NuGet.Configuration.dll",
+        "tools/NuGet.DependencyResolver.Core.dll",
+        "tools/NuGet.Frameworks.dll",
+        "tools/NuGet.LibraryModel.dll",
+        "tools/NuGet.Packaging.Core.Types.dll",
+        "tools/NuGet.Packaging.Core.dll",
+        "tools/NuGet.Packaging.dll",
+        "tools/NuGet.ProjectModel.dll",
+        "tools/NuGet.Protocol.dll",
+        "tools/NuGet.Versioning.dll",
+        "tools/Nustache.Core.dll",
+        "tools/SandcastleRefMapper.exe",
+        "tools/SandcastleRefMapper.exe.config",
+        "tools/System.Buffers.dll",
+        "tools/System.Collections.Immutable.dll",
+        "tools/System.CommandLine.dll",
+        "tools/System.Composition.AttributedModel.dll",
+        "tools/System.Composition.Convention.dll",
+        "tools/System.Composition.Hosting.dll",
+        "tools/System.Composition.Runtime.dll",
+        "tools/System.Composition.TypedParts.dll",
+        "tools/System.Memory.dll",
+        "tools/System.Numerics.Vectors.dll",
+        "tools/System.Reflection.Metadata.dll",
+        "tools/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/System.Text.Encoding.CodePages.dll",
+        "tools/System.Threading.Tasks.Dataflow.dll",
+        "tools/System.Threading.Tasks.Extensions.dll",
+        "tools/System.ValueTuple.dll",
+        "tools/YamlDotNet.dll",
+        "tools/cs/FSharp.Core.resources.dll",
+        "tools/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/cs/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/cs/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/cs/Microsoft.CodeAnalysis.resources.dll",
+        "tools/de/FSharp.Core.resources.dll",
+        "tools/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/de/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/de/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/de/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/de/Microsoft.CodeAnalysis.resources.dll",
+        "tools/es/FSharp.Core.resources.dll",
+        "tools/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/es/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/es/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/es/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/es/Microsoft.CodeAnalysis.resources.dll",
+        "tools/fr/FSharp.Core.resources.dll",
+        "tools/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/fr/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/fr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/fr/Microsoft.CodeAnalysis.resources.dll",
+        "tools/it/DotLiquid.resources.dll",
+        "tools/it/FSharp.Core.resources.dll",
+        "tools/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/it/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/it/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/it/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/it/Microsoft.CodeAnalysis.resources.dll",
+        "tools/ja/FSharp.Core.resources.dll",
+        "tools/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/ja/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/ja/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/ja/Microsoft.CodeAnalysis.resources.dll",
+        "tools/ko/FSharp.Core.resources.dll",
+        "tools/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/ko/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/ko/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/ko/Microsoft.CodeAnalysis.resources.dll",
+        "tools/pl/FSharp.Core.resources.dll",
+        "tools/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/pl/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/pl/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/pl/Microsoft.CodeAnalysis.resources.dll",
+        "tools/pt-BR/FSharp.Core.resources.dll",
+        "tools/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+        "tools/ru/FSharp.Core.resources.dll",
+        "tools/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/ru/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/ru/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/ru/Microsoft.CodeAnalysis.resources.dll",
+        "tools/tr/FSharp.Core.resources.dll",
+        "tools/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/tr/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/tr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/tr/Microsoft.CodeAnalysis.resources.dll",
+        "tools/zh-Hans/FSharp.Core.resources.dll",
+        "tools/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+        "tools/zh-Hant/FSharp.Core.resources.dll",
+        "tools/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll",
+        "tools/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll",
+        "tools/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll",
+        "tools/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
+        "tools/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
+        "tools/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll",
+        "tools/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/zh-Hant/Microsoft.CodeAnalysis.resources.dll"
+      ]
+    },
+    "BLL/1.0.0": {
+      "type": "project",
+      "path": "../BLL/BLL.csproj",
+      "msbuildProject": "../BLL/BLL.csproj"
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "BLL >= 1.0.0",
+      "DAL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Hp\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\MultilayerProject\\MultilayerProject.csproj",
+      "projectName": "MultilayerProject",
+      "projectPath": "C:\\Users\\Hp\\source\\repos\\MultilayerProject\\MultilayerProject.csproj",
+      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hp\\source\\repos\\MultilayerProject\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\Hp\\source\\repos\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\Hp\\source\\repos\\BLL\\BLL.csproj"
+            },
+            "C:\\Users\\Hp\\source\\repos\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Hp\\source\\repos\\DAL\\DAL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

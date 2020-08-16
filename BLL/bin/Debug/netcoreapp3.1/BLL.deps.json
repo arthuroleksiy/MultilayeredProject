@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BLL/1.0.0": {
+        "dependencies": {
+          "DAL": "1.0.0"
+        },
+        "runtime": {
+          "BLL.dll": {}
+        }
+      },
+      "SandcastleRefMapper/2.56.2": {},
+      "DAL/1.0.0": {
+        "dependencies": {
+          "SandcastleRefMapper": "2.56.2"
+        },
+        "runtime": {
+          "DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SandcastleRefMapper/2.56.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FIRVzr66UWOTkn1+NUPW4L89ODmbewR2MlKCUCfCrWpjtAXv/KRDgLEi2r+E/ocxsl1haKn9UzExo00FXSkEZQ==",
+      "path": "sandcastlerefmapper/2.56.2",
+      "hashPath": "sandcastlerefmapper.2.56.2.nupkg.sha512"
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

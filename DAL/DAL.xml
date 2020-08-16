@@ -1,0 +1,567 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DAL</name>
+    </assembly>
+    <members>
+        <member name="T:DAL.Administrator">
+            <summary>
+            Administrator class
+            </summary>
+        </member>
+        <member name="M:DAL.Administrator.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DAL.Administrator"/> class.
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="surname"></param>
+            <param name="telephoneNumber"></param>
+            <param name="login"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:DAL.Administrator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DAL.Administrator"/> class that initialize base instace of the <see cref="T:DAL.RegisteredUser"/> class .
+            </summary>
+        </member>
+        <member name="T:DAL.Guest">
+            <summary>
+            Guest class derived from <see cref="T:DAL.IRole"/>
+            </summary>
+        </member>
+        <member name="T:DAL.Category">
+            <summary>
+            Sefine <see cref="T:DAL.Category"/> enum.
+            </summary>
+        </member>
+        <member name="F:DAL.Category.Bakery">
+            <summary>
+            Bakery value
+            </summary>
+        </member>
+        <member name="F:DAL.Category.Fruits_and_Vegetables">
+            <summary>
+            Fruits_and_Vegetables value
+            </summary>
+        </member>
+        <member name="F:DAL.Category.Milk_products">
+            <summary>
+            Milk_products value
+            </summary>
+        </member>
+        <member name="F:DAL.Category.Meat_and_fish">
+            <summary>
+            Meat_and_fish value
+            </summary>
+        </member>
+        <member name="F:DAL.Category.Canned_food">
+            <summary>
+            Canned_food value
+            </summary>
+        </member>
+        <member name="F:DAL.Category.Packet_cereals">
+            <summary>
+            Packet_sereals value
+            </summary>
+        </member>
+        <member name="F:DAL.Category.Drinks">
+            <summary>
+            Drinks value
+            </summary>
+        </member>
+        <member name="F:DAL.Category.Sweets">
+            <summary>
+            Sweets value
+            </summary>
+        </member>
+        <member name="F:DAL.Category.Household_Goods">
+            <summary>
+            Household_Goods value
+            </summary>
+        </member>
+        <member name="T:DAL.IItem">
+            <summary>
+            Define <see cref="T:DAL.IItem"/> interface.
+            </summary>
+        </member>
+        <member name="P:DAL.IItem.Id">
+            <summary>
+            Id value
+            </summary>
+        </member>
+        <member name="P:DAL.IItem.Name">
+            <summary>
+            Name value
+            </summary>
+        </member>
+        <member name="P:DAL.IItem.Description">
+            <summary>
+            Description value
+            </summary>
+        </member>
+        <member name="P:DAL.IItem.Price">
+            <summary>
+            Price
+            </summary>
+        </member>
+        <member name="P:DAL.IItem.TotalPrice">
+            <summary>
+            Total price
+            </summary>
+        </member>
+        <member name="P:DAL.IItem.Category">
+            <summary>
+            <see cref="P:DAL.IItem.Category"/>
+            </summary>
+        </member>
+        <member name="T:DAL.IRegisteredUser">
+            <summary>
+            Define <see cref="T:DAL.IRegisteredUser"/> enum and inherit <see cref="T:DAL.IRole"/> interface.
+            </summary>
+        </member>
+        <member name="T:DAL.IRole">
+            <summary>
+            Interface that represents role of user
+            </summary>
+        </member>
+        <member name="T:DAL.ItemByNumber">
+            <summary>
+            Defines ItemByNumber enum and inherit <see cref="T:DAL.IItem"/> interface.
+            </summary>
+        </member>
+        <member name="P:DAL.ItemByNumber.Id">
+            <value>get the value of id</value>
+        </member>
+        <member name="P:DAL.ItemByNumber.Number">
+            <value>get the value of Number</value>
+        </member>
+        <member name="P:DAL.ItemByNumber.Name">
+            <value>get the value of Name</value>
+        </member>
+        <member name="P:DAL.ItemByNumber.Description">
+            <value>get the value of Description</value>
+        </member>
+        <member name="P:DAL.ItemByNumber.Price">
+            <value>get the value of Price</value>
+        </member>
+        <member name="P:DAL.ItemByNumber.TotalPrice">
+            <value>get the value of TotalPrice</value>
+        </member>
+        <member name="P:DAL.ItemByNumber.Category">
+            <value>get the value of <see cref="P:DAL.ItemByNumber.Category"/></value>
+        </member>
+        <member name="M:DAL.ItemByNumber.#ctor(System.Int32,System.Int32,System.String,System.String,System.Decimal,System.Decimal,DAL.Category)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DAL.ItemByNumber"/> class.
+            </summary>
+            <param name="id"></param>
+            <param name="Number"></param>
+            <param name="Name"></param>
+            <param name="Description"></param>
+            <param name="Price"></param>
+            <param name="TotalPrice"></param>
+            <param name="Category"><see cref="P:DAL.ItemByNumber.Category"/> value</param>
+        </member>
+        <member name="T:DAL.ItemByWeight">
+            <summary>
+            Define Item by weight derived from <see cref="T:DAL.IItem"/>
+            </summary>
+        </member>
+        <member name="P:DAL.ItemByWeight.Id">
+            <value>get the value of id</value>
+        </member>
+        <member name="P:DAL.ItemByWeight.Weight">
+            <value>get the value of Weight</value>
+        </member>
+        <member name="P:DAL.ItemByWeight.Name">
+            <value>get the value of Name</value>
+        </member>
+        <member name="P:DAL.ItemByWeight.Description">
+            <value>get the value of Description</value>
+        </member>
+        <member name="P:DAL.ItemByWeight.Price">
+            <value>get the value of Price</value>
+        </member>
+        <member name="P:DAL.ItemByWeight.TotalPrice">
+            <value>get the value of TotalPrice</value>
+        </member>
+        <member name="P:DAL.ItemByWeight.Category">
+            <value>get the value of <see cref="P:DAL.ItemByWeight.Category"/></value>
+        </member>
+        <member name="M:DAL.ItemByWeight.#ctor(System.Int32,System.Double,System.String,System.String,System.Decimal,System.Decimal,DAL.Category)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DAL.ItemByWeight"/> class.
+            </summary>
+            <param name="id"></param>
+            <param name="Weight"></param>
+            <param name="Name"></param>
+            <param name="Description"></param>
+            <param name="Price"></param>
+            <param name="TotalPrice"></param>
+            <param name="Category"><see cref="P:DAL.ItemByWeight.Category"/> value</param>
+        </member>
+        <member name="T:DAL.ItemType">
+            <summary>
+            Defines enum of choise
+            </summary>
+        </member>
+        <member name="F:DAL.ItemType.Name">
+            <summary>
+            Name value
+            </summary>
+        </member>
+        <member name="F:DAL.ItemType.Description">
+            <summary>
+            Description value
+            </summary>
+        </member>
+        <member name="F:DAL.ItemType.Price">
+            <summary>
+            Price value
+            </summary>
+        </member>
+        <member name="F:DAL.ItemType.TotalPrice">
+            <summary>
+            Total price value
+            </summary>
+        </member>
+        <member name="F:DAL.ItemType.Category">
+            <summary>
+            Category value
+            </summary>
+        </member>
+        <member name="T:DAL.MockActiveUserRepository">
+            <summary>
+            Represents current user
+            </summary>
+        </member>
+        <member name="P:DAL.MockActiveUserRepository.CurrentUser">
+            <summary>
+            <see cref="T:DAL.IRole"/> value
+            </summary>
+        </member>
+        <member name="P:DAL.MockActiveUserRepository.Login">
+            <summary>
+            Login value
+            </summary>
+        </member>
+        <member name="M:DAL.MockActiveUserRepository.WhoISLogged">
+            <summary>
+            Returns type of current 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.MockActiveUserRepository.GetId">
+            <summary>
+            Gets id of current user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.MockAssortementRepsotory">
+            <summary>
+            The MockAssortementRepsotory class.
+            Contains all data and methods for operating supermarket assortement.
+            </summary>
+        </member>
+        <member name="P:DAL.MockAssortementRepsotory.Assortement">
+            <value>
+            returns Collection of <see cref="T:DAL.IItem"/> assortment
+            </value>
+        </member>
+        <member name="M:DAL.MockAssortementRepsotory.GetLastId">
+            <summary>
+            Gets last id
+            </summary>
+            <returns>Last int id</returns>
+        </member>
+        <member name="M:DAL.MockAssortementRepsotory.GetItemById(System.Int32)">
+            <summary>
+            Gets item of specific id
+            </summary>
+            <param name="id"></param>
+            <returns><see cref="T:DAL.IItem"/> value</returns>
+        </member>
+        <member name="T:DAL.MockBucketOrderRepository">
+            <summary>
+            Create
+            </summary>
+        </member>
+        <member name="F:DAL.MockBucketOrderRepository.Orders">
+            <summary>
+            Collectoin of <see cref="T:DAL.Order"/>
+            </summary>
+        </member>
+        <member name="M:DAL.MockBucketOrderRepository.ChangeStatus(System.Int32,DAL.Status)">
+            <summary>
+            Changes order status
+            </summary>
+            <param name="id"></param>
+            <param name="newStatus"><see cref="T:DAL.Status"/> value</param>
+        </member>
+        <member name="M:DAL.MockBucketOrderRepository.AddOrderByParameters(DAL.Order)">
+            <summary>
+            Add new orderr
+            </summary>
+            <param name="order"><see cref="T:DAL.Order"/></param>
+        </member>
+        <member name="M:DAL.MockBucketOrderRepository.ChangeItemById``1(System.Int32,``0)">
+            <summary>
+            Change item by id
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="id"></param>
+            <param name="quantity"></param>
+            <returns>value of <see cref="T:DAL.IItem"/></returns>
+        </member>
+        <member name="M:DAL.MockBucketOrderRepository.GetLastId">
+            <summary>
+            Last Order index
+            </summary>
+            <returns>int index</returns>
+        </member>
+        <member name="T:DAL.MockOrderHistoryRepository">
+            <summary>
+            Repository with history of orders
+            </summary>
+        </member>
+        <member name="F:DAL.MockOrderHistoryRepository.Orders">
+            <summary>
+            Collection of <see cref="T:DAL.Order"/>
+            </summary>
+        </member>
+        <member name="M:DAL.MockOrderHistoryRepository.AddOrder(DAL.Status,System.Collections.Generic.IEnumerable{DAL.IItem},System.DateTime,DAL.RegisteredUser)">
+            <summary>
+            Add new <see cref="T:DAL.Order"/> by parameters
+            </summary>
+            <param name="status"></param>
+            <param name="items"></param>
+            <param name="date"></param>
+            <param name="user"></param>
+        </member>
+        <member name="M:DAL.MockOrderHistoryRepository.AddOrderByParameters(DAL.Order)">
+            <summary>
+            Add <see cref="T:DAL.Order"/> to orders list
+            </summary>
+            <param name="order"></param>
+        </member>
+        <member name="M:DAL.MockOrderHistoryRepository.GetLastId">
+            <summary>
+            Gets last id
+            </summary>
+            <returns>Last int id</returns>
+        </member>
+        <member name="M:DAL.MockOrderHistoryRepository.ChangeItemById``1(System.Int32,``0)">
+            <summary>
+            Change <see cref="T:DAL.IItem"/> by specific id
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="id"></param>
+            <param name="quantity"></param>
+            <returns><see cref="T:DAL.IItem"/> value</returns>
+        </member>
+        <member name="T:DAL.MockRegisteredUserRepository">
+            <summary>
+            Create repository with registered users
+            </summary>
+        </member>
+        <member name="P:DAL.MockRegisteredUserRepository.AllUsers">
+            <summary>
+            Collection of <see cref="T:DAL.RegisteredUser"/>
+            </summary>
+        </member>
+        <member name="M:DAL.MockRegisteredUserRepository.Contains(System.String)">
+            <summary>
+            Do system contains login
+            </summary>
+            <param name="login"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:DAL.MockRegisteredUserRepository.GetUserById(System.Int32)">
+            <summary>
+            Get <see cref="T:DAL.RegisteredUser"/> bu id
+            </summary>
+            <param name="id"></param>
+            <returns><see cref="T:DAL.RegisteredUser"/> object</returns>
+        </member>
+        <member name="M:DAL.MockRegisteredUserRepository.GetLastId">
+            <summary>
+            Get last id
+            </summary>
+            <returns>int id</returns>
+        </member>
+        <member name="T:DAL.Status">
+            <summary>
+            Enum represents Orsers status
+            </summary>
+        </member>
+        <member name="F:DAL.Status.New">
+            <summary>
+            New order
+            </summary>
+        </member>
+        <member name="F:DAL.Status.Cancelled_by_administrator">
+            <summary>
+            Order cancelled by administrtor order
+            </summary>
+        </member>
+        <member name="F:DAL.Status.Cancelled_by_user">
+            <summary>
+            Order cancelled by user 
+            </summary>
+        </member>
+        <member name="F:DAL.Status.Payment_required">
+            <summary>
+            Payment reuired for order
+            </summary>
+        </member>
+        <member name="F:DAL.Status.Sent">
+            <summary>
+            Order has been sent
+            </summary>
+        </member>
+        <member name="F:DAL.Status.Recieved">
+            <summary>
+            Order has been recieved
+            </summary>
+        </member>
+        <member name="F:DAL.Status.Finished">
+            <summary>
+            Order is finished
+            </summary>
+        </member>
+        <member name="T:DAL.Order">
+            <summary>
+            Order class
+            </summary>
+        </member>
+        <member name="P:DAL.Order.Id">
+            <summary>
+            Id value
+            </summary>
+        </member>
+        <member name="P:DAL.Order.Status">
+            <summary>
+            <see cref="P:DAL.Order.Status"/> value
+            </summary>
+        </member>
+        <member name="P:DAL.Order.Items">
+            <summary>
+            Collection of <see cref="T:DAL.IItem"/>
+            </summary>
+        </member>
+        <member name="P:DAL.Order.Date">
+            <summary>
+            <see cref="T:System.DateTime"/> value
+            </summary>
+        </member>
+        <member name="P:DAL.Order.RegisteredUserId">
+            <summary>
+            Id value
+            </summary>
+        </member>
+        <member name="P:DAL.Order.User">
+            <summary>
+            <see cref="T:DAL.RegisteredUser"/> value
+            </summary>
+        </member>
+        <member name="M:DAL.Order.#ctor(System.Int32,DAL.Status,System.Collections.Generic.IEnumerable{DAL.IItem},System.DateTime,DAL.RegisteredUser)">
+            <summary>
+            Paameters constructor
+            </summary>
+            <param name="id"></param>
+            <param name="Status"></param>
+            <param name="Items"></param>
+            <param name="Date"></param>
+            <param name="User"></param>
+        </member>
+        <member name="M:DAL.Order.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:DAL.OrderHistory">
+            <summary>
+            Order history class
+            </summary>
+        </member>
+        <member name="P:DAL.OrderHistory.Orders">
+            <summary>
+            Collection of <see cref="T:DAL.Order"/>
+            </summary>
+        </member>
+        <member name="M:DAL.OrderHistory.#ctor(System.Collections.Generic.IEnumerable{DAL.Order})">
+            <summary>
+            Parametrized constructor
+            </summary>
+            <param name="orders">Collection of <see cref="T:DAL.Order"/></param>
+        </member>
+        <member name="T:DAL.RegisteredUser">
+            <summary>
+            Derivered class from <see cref="T:DAL.IRegisteredUser"/>
+            </summary>
+        </member>
+        <member name="P:DAL.RegisteredUser.RegisteresUserId">
+            <summary>
+            RegisteresUserId value
+            </summary>
+        </member>
+        <member name="P:DAL.RegisteredUser.Name">
+            <summary>
+            Name value
+            </summary>
+        </member>
+        <member name="P:DAL.RegisteredUser.Surname">
+            <summary>
+            Surname value
+            </summary>
+        </member>
+        <member name="P:DAL.RegisteredUser.TelephoneNumber">
+            <summary>
+            Telephone number value 
+            </summary>
+        </member>
+        <member name="P:DAL.RegisteredUser.Login">
+            <summary>
+            Login value
+            </summary>
+        </member>
+        <member name="P:DAL.RegisteredUser.Password">
+            <summary>
+            Password value
+            </summary>
+        </member>
+        <member name="M:DAL.RegisteredUser.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Parametrized constructor
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="surname"></param>
+            <param name="telephoneNumber"></param>
+            <param name="login"></param>
+            <param name="password"></param>
+        </member>
+        <member name="T:DAL.User">
+            <summary>
+            Derived class from <see cref="T:DAL.RegisteredUser"/> class
+            </summary>
+        </member>
+        <member name="M:DAL.User.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Parametrized constructor, which initialize constructor of <see cref="T:DAL.RegisteredUser"/> entity
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="surname"></param>
+            <param name="telephoneNumber"></param>
+            <param name="login"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:DAL.User.#ctor">
+            <summary>
+            Default constructor, which initialize constructor of <see cref="T:DAL.RegisteredUser"/> entity
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,9 @@
+C:\Users\Hp\source\repos\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+C:\Users\Hp\source\repos\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\Hp\source\repos\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Users\Hp\source\repos\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\Hp\source\repos\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Hp\source\repos\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Users\Hp\source\repos\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\Hp\source\repos\DAL\bin\Debug\netcoreapp3.1\DAL.xml

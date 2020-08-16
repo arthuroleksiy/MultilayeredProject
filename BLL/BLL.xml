@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BLL</name>
+    </assembly>
+    <members>
+        <member name="T:BLL.AddItemBll">
+            <summary>
+            Add item class with business logic
+            </summary>
+        </member>
+        <member name="M:BLL.AddItemBll.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BLL.AddItemBll.AddItem(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Add new Item to assortement
+            </summary>
+            <param name="name"></param>
+            <param name="amount"></param>
+            <param name="description"></param>
+            <param name="price"></param>
+            <param name="category"></param>
+        </member>
+        <member name="M:BLL.AddItemBll.ParseChoise(System.String,System.Int32@)">
+            <summary>
+            Check if choise is correct
+            </summary>
+            <param name="choise"></param>
+            <param name="result"></param>
+            <returns>bool result</returns>
+        </member>
+        <member name="M:BLL.AddItemBll.IsIntResult(System.String,System.Int32@)">
+            <summary>
+            Check if input type is int
+            </summary>
+            <param name="value"></param>
+            <param name="intResult"></param>
+            <returns>bool result</returns>
+        </member>
+        <member name="M:BLL.AddItemBll.IsDoubleResult(System.String,System.Double@)">
+            <summary>
+            Check if input type is double
+            </summary>
+            <param name="value"></param>
+            <param name="doubleResult"></param>
+            <returns>bool result</returns>
+        </member>
+        <member name="M:BLL.AddItemBll.IsCategoryType(System.String,DAL.Category@)">
+            <summary>
+            Check if input type is <see cref="T:DAL.Category"/>
+            </summary>
+            <param name="input"></param>
+            <param name="outValue"><see cref="T:DAL.Category"/> type</param>
+            <returns>bool result</returns>
+        </member>
+        <member name="M:BLL.AddItemBll.IsPriceCorrect(System.String,System.Decimal@)">
+            <summary>
+            Check if price is correct
+            </summary>
+            <param name="input"></param>
+            <param name="result"></param>
+            <returns>bool result</returns>
+        </member>
+        <member name="T:BLL.AssortementBLL">
+            <summary>
+            Assortement class with business logic
+            </summary>
+        </member>
+        <member name="M:BLL.AssortementBLL.GetAssortement">
+            <summary>
+             Method that returns supermarket assortment
+            </summary>
+            <returns>Collection of <see cref="T:DAL.IItem"/></returns>
+        </member>
+        <member name="T:BLL.BucketOrderBLL">
+            <summary>
+            Bucket order class with business logic
+            </summary>
+        </member>
+        <member name="M:BLL.BucketOrderBLL.ChangeStatus(System.Int32,DAL.Status)">
+            <summary>
+            Change status of bucket order
+            </summary>
+            <param name="id"></param>
+            <param name="status"><see cref="T:DAL.Status"/> type</param>
+            <exception cref="T:System.IndexOutOfRangeException">return where id is out of range</exception>
+        </member>
+        <member name="M:BLL.BucketOrderBLL.GetFirstId">
+            <summary>
+            Method gets first id
+            </summary>
+            <returns>int value of the first id</returns>
+            <exception cref="T:System.IndexOutOfRangeException">Returns if index not in acceptable range</exception>
+        </member>
+        <member name="M:BLL.BucketOrderBLL.GetStatusBefore(System.Int32)">
+            <summary>
+            Method get <see cref="T:DAL.Status"/> before changes
+            </summary>
+            <param name="intId"></param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:BLL.BucketOrderBLL.GetLastId">
+            <summary>
+            Get last id from bucket orders
+            </summary>
+            <returns>int value of id</returns>
+            <exception cref="T:System.NullReferenceException">Returns if id not in range</exception>
+        </member>
+        <member name="M:BLL.BucketOrderBLL.GetAllOrders">
+            <summary>
+            Method returns all Orders
+            </summary>
+            <returns>Collection of <see cref="T:DAL.Order"/></returns>
+            <exception cref="T:System.NullReferenceException">Resturns if collection is empty</exception>
+        </member>
+        <member name="M:BLL.BucketOrderBLL.IsUserRole">
+            <summary>
+            Get user role
+            </summary>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:BLL.BucketOrderBLL.IsCurrentUserLogined(DAL.Order)">
+            <summary>
+            Check if current user is signed id
+            </summary>
+            <param name="order"></param>
+            <returns>bool value</returns>
+            <exception cref="T:System.NullReferenceException">Throw if any of orders do not belong to user</exception>
+        </member>
+        <member name="T:BLL.ChangeInfoBLL">
+            <summary>
+            Change info class with business logic
+            </summary>
+        </member>
+        <member name="F:BLL.ChangeInfoBLL.registeredUsers">
+            <summary>
+            Collection of <see cref="T:DAL.RegisteredUser"/>
+            </summary>
+        </member>
+        <member name="M:BLL.ChangeInfoBLL.GetUsers">
+            <summary>
+            Gets collection of <see cref="T:DAL.RegisteredUser"/>
+            </summary>
+            <returns>Collection of <see cref="T:DAL.RegisteredUser"/></returns>
+        </member>
+        <member name="M:BLL.ChangeInfoBLL.ChangeName(System.Int32,System.String)">
+            <summary>
+            Changes name of user
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BLL.ChangeInfoBLL.ChangeSurame(System.Int32,System.String)">
+            <summary>
+            Changes surname of user 
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BLL.ChangeInfoBLL.ChangeTelephone(System.Int32,System.String)">
+            <summary>
+            Changes telephone of user
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BLL.ChangeInfoBLL.ChangeLogin(System.Int32,System.String)">
+            <summary>
+            Changes login of user
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BLL.ChangeInfoBLL.ChangePassword(System.Int32,System.String)">
+            <summary>
+            Changes password of user
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="T:BLL.ChangeItemBLL">
+            <summary>
+            Change item class with business logic
+            </summary>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.GetItems">
+            <summary>
+             Gets collection of items
+            </summary>
+            <returns>Collection of <see cref="T:DAL.IItem"/></returns>
+            <exception cref="T:System.NullReferenceException">Throws if result is null</exception>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.IsCorrectId(System.String)">
+            <summary>
+            Checks number correctness
+            </summary>
+            <param name="id"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.ParseId(System.String)">
+            <summary>
+            Parses id to int
+            </summary>
+            <param name="id"></param>
+            <returns>int value</returns>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.ChangeName(System.Int32,System.String)">
+            <summary>
+            Changes name of item
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.GetItemValue(System.String)">
+            <summary>
+            Gets item type
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.IsItemType(System.String)">
+            <summary>
+            Check if value is items type
+            </summary>
+            <param name="input"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.ChangeDescription(System.Int32,System.String)">
+            <summary>
+            Changes item description
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.IsPriceCorrect(System.String)">
+            <summary>
+            Check price format correctness
+            </summary>
+            <param name="input"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.ChangePrice(System.Int32,System.String)">
+            <summary>
+            Changes item price
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.IsCategoryType(System.String)">
+            <summary>
+            Check if value is category type
+            </summary>
+            <param name="input"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.ChangeCategory(System.Int32,System.String)">
+            <summary>
+            Changes category of item
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:BLL.ChangeItemBLL.GetItemById(System.Int32)">
+            <summary>
+            Returns collection of items
+            </summary>
+            <param name="resultId"></param>
+            <returns>Collection of <see cref="T:DAL.IItem"/></returns>
+        </member>
+        <member name="T:BLL.EnterPageBLL">
+            <summary>
+            Enter page class with business logic
+            </summary>
+        </member>
+        <member name="M:BLL.EnterPageBLL.GetLoggedUser">
+            <summary>
+            Gets logged user type
+            </summary>
+            <returns>Type value</returns>
+        </member>
+        <member name="M:BLL.IOrderBLL.GetAllOrders">
+            <summary>
+            Gets all orders
+            </summary>
+            <returns>Collection of <see cref="T:DAL.Order"/></returns>
+            <exception cref="T:System.NullReferenceException">Throws if orders are empty</exception>
+        </member>
+        <member name="M:BLL.IOrderBLL.IsUserRole">
+            <summary>
+            Check if current user good for order
+            </summary>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:BLL.IOrderBLL.IsCurrentUserLogined(DAL.Order)">
+            <summary>
+            Check if current user is signed in
+            </summary>
+            <param name="order"><see cref="T:DAL.Order"/> value</param>
+            <returns>bool value</returns>
+            <exception cref="T:System.NullReferenceException">Throws if order is null</exception>
+        </member>
+        <member name="T:BLL.LoginPageBLL">
+            <summary>
+            Login page class with business logic
+            </summary>
+        </member>
+        <member name="F:BLL.LoginPageBLL.currentUser">
+            <summary>
+            Current user value
+            </summary>
+        </member>
+        <member name="M:BLL.LoginPageBLL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:BLL.LoginPageBLL.Login">
+            <summary>
+            Contains login value
+            </summary>
+        </member>
+        <member name="M:BLL.LoginPageBLL.CheckData(System.String,System.String)">
+            <summary>
+            Checks correcdt login data
+            </summary>
+            <param name="login"></param>
+            <param name="password"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="M:BLL.LoginPageBLL.ISCorrectLogin(System.String,System.String)">
+            <summary>
+            Changes current user
+            </summary>
+            <param name="login"></param>
+            <param name="password"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="T:BLL.NewOrderBLL">
+            <summary>
+            New order class with business logic
+            </summary>
+        </member>
+        <member name="M:BLL.NewOrderBLL.GetDataForOrder">
+            <summary>
+            Gets required data from order
+            </summary>
+            <returns>Data for order</returns>
+        </member>
+        <member name="M:BLL.NewOrderBLL.FormOrder(DAL.Order,System.Collections.Generic.List{DAL.IItem})">
+            <summary>
+            Forms new order
+            </summary>
+            <param name="order"></param>
+            <param name="items">Collection of <see cref="T:DAL.IItem"/></param>
+        </member>
+        <member name="M:BLL.NewOrderBLL.CountTotalResult(System.Collections.Generic.List{DAL.IItem})">
+            <summary>
+            Gets total price for item
+            </summary>
+            <param name="items">Collection of <see cref="T:DAL.IItem"/></param>
+            <returns>Final summary</returns>
+        </member>
+        <member name="M:BLL.NewOrderBLL.ChosenCategory(DAL.Category)">
+            <summary>
+            Gets items of chosen <see cref="T:DAL.Category"/>
+            </summary>
+            <param name="category"></param>
+            <returns>Collection of <see cref="T:DAL.IItem"/></returns>
+        </member>
+        <member name="T:BLL.RegistratiionPageBLL">
+            <summary>
+            Registration Page class with business logic
+            </summary>
+        </member>
+        <member name="M:BLL.RegistratiionPageBLL.RegisterRole(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Register new user
+            </summary>
+            <param name="name"></param>
+            <param name="surname"></param>
+            <param name="telephoneNumber"></param>
+            <param name="login"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BLL.SearchItemBLL">
+            <summary>
+            Search item class with business logic
+            </summary>
+        </member>
+        <member name="M:BLL.SearchItemBLL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BLL.SearchItemBLL.ChosenCategory(DAL.Category)">
+            <summary>
+            Gets items by chosen category
+            </summary>
+            <param name="category"><see cref="T:DAL.Category"/> value</param>
+            <returns>Collection of <see cref="T:DAL.IItem"/></returns>
+        </member>
+        <member name="M:BLL.SearchItemBLL.ContainsName(System.String)">
+            <summary>
+            Check if assortement contains specific name
+            </summary>
+            <param name="result"></param>
+            <returns>bool value</returns>
+            <exception cref="T:System.NullReferenceException">Throws if result is empty</exception>
+        </member>
+        <member name="M:BLL.SearchItemBLL.SearchByName(System.String)">
+            <summary>
+            Search collection of items bu specific name
+            </summary>
+            <param name="name"></param>
+            <returns>Collection of <see cref="T:DAL.IItem"/></returns>
+            <exception cref="T:System.NullReferenceException">Throws if input name is empty</exception>
+        </member>
+        <member name="T:BLL.SeeOrderHistoryBLL">
+            <summary>
+            See order history class with business logic
+            </summary>
+        </member>
+        <member name="M:BLL.SeeOrderHistoryBLL.GetAllOrders">
+            <summary>
+            Gets all orders
+            </summary>
+            <returns>Collection of <see cref="T:DAL.Order"/></returns>
+            <exception cref="T:System.NullReferenceException">Throws if orders are empty</exception>
+        </member>
+        <member name="M:BLL.SeeOrderHistoryBLL.IsUserRole">
+            <summary>
+            Check if current user good for order
+            </summary>
+            <returns>bool value</returns>
+        </member>
+    </members>
+</doc>

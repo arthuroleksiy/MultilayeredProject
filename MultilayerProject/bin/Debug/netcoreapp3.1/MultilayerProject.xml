@@ -1,0 +1,648 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MultilayerProject</name>
+    </assembly>
+    <members>
+        <member name="T:MultilayerProject.AddItemPL">
+            <summary>
+            Adding item class
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.AddItemPL.addItemController">
+            <summary>
+            Adding item class
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.AddItemPL.mockAssortementBLL">
+            <summary>
+            Business logic to work with supermarket assortment data
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.AddItemPL.enterPageView">
+            <summary>
+            Class that represents main menu page
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.AddItemPL.addItem">
+            <summary>
+            Delegate for adding item logic
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.AddItemPL.getAssortement">
+            <summary>
+            Delegate for getting supermarket assortment
+            </summary>
+        </member>
+        <member name="T:MultilayerProject.AddItemPL.GetChoise">
+            <summary>
+            Delegate of users choise
+            </summary>
+            <param name="chose"></param>
+            <param name="parsedChoise"></param>
+            <returns>bool value</returns>
+        </member>
+        <member name="F:MultilayerProject.AddItemPL.getChoise">
+            <summary>
+            Declaring of GetChoise delegate
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.AddItemPL.#ctor">
+            <summary>
+            Default constructor Initialize values
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.AddItemPL.StartAdding">
+            <summary>
+            Users choise
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.AddItemPL.NewItem">
+            <summary>
+            User entering data and creating new <see cref="T:DAL.IItem"/>
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.AddItemPL.ShowAssortement">
+            <summary>
+            Show assortement
+            </summary>
+        </member>
+        <member name="T:MultilayerProject.BucketOrderPL">
+            <summary>
+            Bucket order presentation
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.BucketOrderPL.enterPageView">
+            <summary>
+            Enter page View
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.BucketOrderPL.changeStatus">
+            <summary>
+            Delegate for status changing
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.BucketOrderPL.BucketOrderController">
+            <summary>
+            Business logic object for basket of ordered goods
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.BucketOrderPL.getOrders">
+            <summary>
+            Delegate to get orders
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.BucketOrderPL.isUserRole">
+            <summary>
+            Delegate for checking user role
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.BucketOrderPL.getFirstId">
+            <summary>
+            Delegate to get first order id
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.BucketOrderPL.getLastId">
+            <summary>
+            Delegate to get last order id
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.BucketOrderPL.isUserLogined">
+            <summary>
+            Delegate for user login check in order
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.BucketOrderPL.getStatusBefore">
+            <summary>
+            Delegate for order status before changes
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.BucketOrderPL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.BucketOrderPL.ChangeBucketOrderStatus">
+            <summary>
+            Write order and change status
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.BucketOrderPL.Output">
+            <summary>
+            Write orders
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.BucketOrderPL.OutputResult(DAL.Order)">
+            <summary>
+            Writing orders
+            </summary>
+            <param name="i"><see cref="T:DAL.Order"/> value</param>
+        </member>
+        <member name="M:MultilayerProject.BucketOrderPL.ChangeStatus">
+            <summary>
+            Changing orders status
+            </summary>
+        </member>
+        <member name="T:MultilayerProject.ChangeInfoPL">
+            <summary>
+            Change info presentation
+            </summary>
+        </member>
+        <member name="T:MultilayerProject.ChangeInfoPL.FieldType">
+            <summary>
+            Types of input fields
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeInfoPL.enterPagePL">
+            <summary>
+            Main page view
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeInfoPL.changeInfoController">
+            <summary>
+            Business logic for information change
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeInfoPL.dictReports">
+            <summary>
+            Dictionnary with delegates for every user's fiels
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeInfoPL.users">
+            <summary>
+            Delegate to get all users list
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeInfoPL.getId">
+            <summary>
+            Delegate to get id
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeInfoPL.getLastId">
+            <summary>
+            Delegate to get last user id
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeInfoPL.getType">
+            <summary>
+            Delegate to get type of field to change 
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.ChangeInfoPL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.ChangeInfoPL.Output">
+            <summary>
+            Write values
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.ChangeInfoPL.ShowPersons">
+            <summary>
+            Write Users
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.ChangeInfoPL.OutputFields">
+            <summary>
+            Output fields indexes
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.ChangeInfoPL.ChangeValue">
+            <summary>
+            Chnage info
+            </summary>
+        </member>
+        <member name="T:MultilayerProject.ChangeItemPL">
+            <summary>
+            Change item presentation
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeItemPL.changeItemController">
+            <summary>
+            Business logic for change item
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeItemPL.enterPagePL">
+            <summary>
+            Main page view
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeItemPL.dictReports">
+            <summary>
+            Dictionnary contains actions for every field
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeItemPL.isItemType">
+            <summary>
+            Check if input value belongs to specific type
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeItemPL.isCorrectId">
+            <summary>
+            Check id correctnes
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeItemPL.parseId">
+            <summary>
+            Return integer id
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeItemPL.getItemByValue">
+            <summary>
+            Get value for specific item
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeItemPL.getItemById">
+            <summary>
+            Get list for specific item
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.ChangeItemPL.wholeList">
+            <summary>
+            Get whole list
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.ChangeItemPL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.ChangeItemPL.ChangeItemMenu">
+            <summary>
+            Writing items
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.ChangeItemPL.ChangeValue">
+            <summary>
+            Change item menu
+            </summary>
+        </member>
+        <member name="T:MultilayerProject.EnterPagePL">
+            <summary>
+            Starting page
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.EnterPagePL.enterPageBLL">
+            <summary>
+            Business logic for main page
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.EnterPagePL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.EnterPagePL.Output">
+            <summary>
+            Output procedure
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.EnterPagePL.Choise">
+            <summary>
+            Make choise
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.EnterPagePL.ChangeView">
+            <summary>
+            Change view
+            </summary>
+        </member>
+        <member name="T:MultilayerProject.LoginPagePL">
+            <summary>
+            Login page view
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.LoginPagePL.LoginUser">
+            <summary>
+            Check if users login correct
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.LoginPagePL.LoginPageController">
+            <summary>
+            Business logic for login page
+            </summary>
+        </member>
+        <member name="P:MultilayerProject.LoginPagePL.Login">
+            <summary>
+            Login property
+            </summary>
+        </member>
+        <member name="P:MultilayerProject.LoginPagePL.Password">
+            <summary>
+            Password property
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.LoginPagePL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.LoginPagePL.LoginProcess">
+            <summary>
+            Login process
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.LoginPagePL.Output">
+            <summary>
+            Input property method
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.LoginPagePL.StartSignIn">
+            <summary>
+            Process of users authentification
+            </summary>
+        </member>
+        <member name="T:MultilayerProject.NewOrderPL">
+            <summary>
+            New order presentation class
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.newOrderController">
+            <summary>
+            Business logic for making new order
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.funcCategoty">
+            <summary>
+            function yhat gets list of items for specific category
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.formOrder">
+            <summary>
+            Action that forms order
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.funcId">
+            <summary>
+            Get item with specific id
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.getData">
+            <summary>
+            Get data for order
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.enterPageView">
+            <summary>
+            Main page view
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.countPrice">
+            <summary>
+            Count total price for order
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.SearchItemView">
+            <summary>
+            Search item view
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.ResultedEnumerbale">
+            <summary>
+            Chosen items list
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.items">
+            <summary>
+            List of items
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.order">
+            <summary>
+            Chosen order
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.intResult">
+            <summary>
+            input integer amount
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.NewOrderPL.doubleResult">
+            <summary>
+            input double amount
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.NewOrderPL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.NewOrderPL.BuyingItems">
+            <summary>
+            Buy item
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.NewOrderPL.Output">
+            <summary>
+            Write result
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.NewOrderPL.UserChoise(DAL.Category@)">
+            <summary>
+            User choise
+            </summary>
+            <param name="enm"><see cref="T:DAL.Category"/></param>
+        </member>
+        <member name="M:MultilayerProject.NewOrderPL.SearchByName">
+            <summary>
+            Search by name
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.NewOrderPL.OutputResult(DAL.Category)">
+            <summary>
+            Write result
+            </summary>
+            <param name="enm"><see cref="T:DAL.Category"/></param>
+        </member>
+        <member name="M:MultilayerProject.NewOrderPL.ChooseItem(DAL.Category)">
+            <summary>
+            Choose Item
+            </summary>
+            <param name="enm"><see cref="T:DAL.Category"/></param>
+        </member>
+        <member name="M:MultilayerProject.NewOrderPL.ShowOrderedGoods(DAL.Category@)">
+            <summary>
+            Show goods
+            </summary>
+            <param name="enm"></param>
+        </member>
+        <member name="M:MultilayerProject.NewOrderPL.ChooseId(DAL.Category@,System.Int32@)">
+            <summary>
+            Choose Id
+            </summary>
+            <param name="enm"><see cref="T:DAL.Category"/></param>
+            <param name="id"></param>
+        </member>
+        <member name="M:MultilayerProject.NewOrderPL.ChooseQuantity(DAL.Category@)">
+            <summary>
+            
+            </summary>
+            <param name="enm"></param>
+        </member>
+        <member name="T:MultilayerProject.Program">
+            <summary>
+            Entry point into program
+            </summary>
+        </member>
+        <member name="T:MultilayerProject.RegistrationPagePL">
+            <summary>
+            Registration view class
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.RegistrationPagePL.registerUser">
+            <summary>
+            Delegate that register's new user
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.RegistrationPagePL.registrationPageController">
+            <summary>
+            Class that contains registration logic
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.RegistrationPagePL.enterPageView">
+            <summary>
+            Class of main page view
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.RegistrationPagePL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.RegistrationPagePL.Output">
+            <summary>
+            Process of registration
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.RegistrationPagePL.RegistrationResult(System.Boolean)">
+            <summary>
+            Registration result
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="T:MultilayerProject.SearchItemPL">
+            <summary>
+            Search item
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SearchItemPL.funcCategoty">
+            <summary>
+            Delegate that gets item list for specific category
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SearchItemPL.contains">
+            <summary>
+            Delegate check if items list contains name
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SearchItemPL.funcName">
+            <summary>
+            Gets list of items for specific string
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SearchItemPL.SearchItemController">
+            <summary>
+            Search item logic
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SearchItemPL.enterPagePL">
+            <summary>
+            Main page view
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SearchItemPL.ResultedEnumerbale">
+            <summary>
+            Contains list of recieved items
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.SearchItemPL.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.SearchItemPL.Output">
+            <summary>
+            Write choise
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.SearchItemPL.SerfingInList">
+            <summary>
+            Serfing In List
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.SearchItemPL.UserChoise(DAL.Category@)">
+            <summary>
+            User choise
+            </summary>
+            <param name="enm"><see cref="T:DAL.Category"/></param>
+        </member>
+        <member name="M:MultilayerProject.SearchItemPL.SearchName">
+            <summary>
+            Search Name
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.SearchItemPL.SearchNameResult">
+            <summary>
+            Search name result
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.SearchItemPL.OutputResult(DAL.Category)">
+            <summary>
+            Write result
+            </summary>
+            <param name="enm"><see cref="T:DAL.Category"/></param>
+        </member>
+        <member name="M:MultilayerProject.SearchItemPL.ChooseNextStep">
+            <summary>
+            Choose next step
+            </summary>
+        </member>
+        <member name="T:MultilayerProject.SeeOrderHistoryPL">
+            <summary>
+            See order history class
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SeeOrderHistoryPL.enterPageView">
+            <summary>
+            Enter page Ciew
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SeeOrderHistoryPL.seeOrderHistoryBLL">
+            <summary>
+            Business logic for order history
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SeeOrderHistoryPL.getOrders">
+            <summary>
+            Delegate that returns list of orders
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SeeOrderHistoryPL.isUserRole">
+            <summary>
+            Delegate that check user's role
+            </summary>
+        </member>
+        <member name="F:MultilayerProject.SeeOrderHistoryPL.isUserLogined">
+            <summary>
+            Delegate to check signed in user
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.SeeOrderHistoryPL.#ctor">
+            <summary>
+            Default construcyor
+            </summary>
+        </member>
+        <member name="M:MultilayerProject.SeeOrderHistoryPL.OutputUserData(DAL.Order)">
+            <summary>
+            Output result order
+            </summary>
+            <param name="i"><see cref="T:DAL.Order"/></param>
+        </member>
+        <member name="M:MultilayerProject.SeeOrderHistoryPL.InputOrder">
+            <summary>
+            Input order
+            </summary>
+        </member>
+    </members>
+</doc>
